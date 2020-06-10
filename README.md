@@ -15,10 +15,10 @@
 <br>
 
 
-<h3 align="center">
-♻  Ecoleta was developed during the **NextLevelWeek** by **Rocketseat** 
+<h4 align="center">
+♻  Ecoleta was developed during the NextLevelWeek by Rocketseat
     <br>
-♻  Recycling waste must be throw in the right place, so the Ecoleta website was created to let people know where to take the recycling waste.
+♻  Recycleble waste must be throw in the right place. Ecoleta website was created to help you with how to do that.
 </h3>
 
 <br>
