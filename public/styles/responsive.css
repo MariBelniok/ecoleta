@@ -6,14 +6,57 @@
         align-items: center;
         text-align: center;
     }
+    #page-home .content{
+        height: 70%;
+    }
+    #page-home header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
     #page-home header a{
         position: absolute;
-        top: 10px;
+        bottom: 10px;
         left: 50%;
         transform: translateX(-50%);
     }
     #page-home main{
         align-items: center;
+    }
+    #create-point header a{
+        position: absolute;
+        top: 125rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #create-point form h1{
+        text-align: center;
+        font-size: 30px;
+    }
+    #create-point form legend h2{
+        font-size: 20px;
+    }
+    #create-point form button{
+        display: block;
+        margin: 20px auto;
+    }
+    #create-point form legend {
+        text-align: center;
+    }
+    #page-search-results h4{
+        margin-top: 20px;
+        text-align: center;
+    }
+    #page-search-results header{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    #page-search-results header a{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
     }
     #page-search-results .cards{
         grid-template-columns: 1fr;
@@ -27,8 +70,63 @@
     form .field-group .field + .field{
         margin-left: 0;
     }
+    .items-grid {
+        grid-template-columns: 1fr 1fr;
+    }
 }
+@media (max-width: 750px) {
+    #page-home header a{
+        margin-bottom: 10px;
+    }
+    #page-home main{
+        align-items: center;
+    }
+    #page-home main h1{
+        font-size: 46px;
+    }
+    #create-point header a{
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
 
+}
+@media (max-width: 640px){
+    #page-home main h1{
+        font-size: 38px;
+    }
+    #page-home main p{
+        font-size: 20px;
+        line-height: 26px;
+    }
+    #page-home header a{
+        bottom: 2%;
+        font-size: 12px;
+    }
+    #page-home main a{
+        height: 56px;
+    }
+    #page-home main a span{
+        height: 56px;
+    }
+    #search-results header a{
+        position: absolute;
+        top: 50rem;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+}
+@media (max-width:570px){
+    #page-home header a{
+        top: 36rem;
+        font-size: 12px;
+    }
+    #create-point header a{
+        top: 128rem;
+    }
+}
 
 @media (min-width:1700px){
     #page-home{

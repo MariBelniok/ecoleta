@@ -11,41 +11,50 @@
 {% endblock styles %}
 
 {% block content %}
-    {%include "partials/page-header.html" %}
+    <div id="search-results">
+        <header>
+            <img src="/icones/logo.svg" alt="Logomarca">
+            <a href="/">
+                <span></span>
+                Voltar para home</a>
+        </header>
 
-    {%if total > 0%}
-        <main>
-            <h4>
-                <strong>{{ total }}
-                    pontos</strong>
-                encontrados
-            </h4>
-            <div class="cards">
+        {%if total > 0%}
+            <main>
+                <h4>
+                    <strong>{{ total }}
+                        pontos</strong>
+                    encontrados
+                </h4>
+                <div class="cards">
 
-                {% for place in places %}
-                    <div class="card">
-                        <img src="{{ place.image }}" alt="{{ place.name }}">
-                        <h1>{{ place.name }}</h1>
-                        <h3>{{ place.items }}</h3>
-                        <p>
-                            {{ place.city }},
-                            {{ place.state }}
-                            <br>
-                            {{ place.address }}, 
-                            {{ place.address2 }}
-                            <br>
-                            
-                        </p>
+                    {% for place in places %}
+                        <div class="card">
+                            <img src="{{ place.image }}" alt="{{ place.name }}">
+                            <h1>{{ place.name }}</h1>
+                            <h3>{{ place.items }}</h3>
+                            <p>
+                                {{ place.city }},
+                                {{ place.state }}
+                                <br>
+                                {{ place.address }},
+                                {{ place.address2 }}
+                                <br>
+
+                            </p>
+                        </div>
+                        {%endfor%}
+
                     </div>
-                    {%endfor%}
 
-                </div>
+                    {%else%}
 
-                {%else%}
+                    <h4>
+                        <strong>Nenhum</strong>
+                        local encontrado</h4>
 
-                <h4><strong>Nenhum</strong> local encontrado</h4>
+                    {%endif%}
 
-                {%endif%}
-
-            </main>
-        {% endblock content %}
+             </main>
+    </div>
+{% endblock content %}
