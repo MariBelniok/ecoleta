@@ -25,7 +25,7 @@
 
 
 <h1 align="center">
-    <img src="public/icones/preview.jpg">
+    <img src="https://i.ibb.co/xDb1ZGK/preview.jpg">
 </h1>
 
 <h2 align="center">
