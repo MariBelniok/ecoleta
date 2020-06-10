@@ -25,7 +25,7 @@
 
 
 <h1 align="center">
-    <img src="https://i.ibb.co/xDb1ZGK/preview.jpg">
+    <img src="https://i.ibb.co/58cj6BG/preview.png">
 </h1>
 
 <h2 align="center">
